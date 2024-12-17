@@ -1,0 +1,125 @@
+@import url("../../global.css");
+
+body {
+  background-color: var(--bg-subpage);
+}
+
+.brandassets-body {
+  padding: 2.5em 1em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.brand-h1 {
+  font-family: var(--national-condensed-bold);
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--national-condensed-bold);
+  font-size: var(--font-size-h3);
+  padding-bottom: 0.5em;
+}
+
+.breadcrum {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+  padding: 1em 0 2.5em;
+  font-family: var(--national-condensed);
+  letter-spacing: 0.5px;
+}
+
+.breadcrum > li:nth-child(even) {
+  padding-top: 0.25em;
+}
+
+.breadcrum > a:hover {
+  color: var(--primary-color);
+}
+
+h4 {
+  font-family: var(--national-font);
+  word-spacing: -7px;
+  font-size: var(--font-size-h4);
+  padding-bottom: 1.5em;
+}
+
+.brandassets-container-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.brandassets-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+img {
+  width: 160px;
+  object-fit: cover;
+}
+
+.brandassets-cards-img {
+  background-color: var(--secondary-color);
+  max-width: 80em;
+  aspect-ratio: 4/3;
+  border-radius: 20px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border-radius: 100px;
+  border: 0.5px solid;
+  width: 100%;
+  padding: 0.7em;
+  font-family: var(--national-condensed-bold);
+  font-size: var(--font-size-body);
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.brandassets-container-lg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .brandassets-container-sm {
+    display: none;
+  }
+  .brandassets-container-lg {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+  }
+
+  .brand-h1 {
+    font-size: var(--font-size-h1);
+    padding: 0.6em 0;
+  }
+
+  .brandassets-cards-img {
+    width: 325px;
+  }
+
+  .brandassets-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    width: 150px;
+  }
+}

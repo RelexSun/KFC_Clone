@@ -1,0 +1,61 @@
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks are stored in:
+._*
+
+# macOS metadata files
+.Spotlight-V100
+.Trashes
+.metadata_never_index
+.fseventsd
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Node modules (if using any Node.js tooling)
+node_modules/
+
+# Local environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Front-end build directories
+dist/
+build/
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*.old
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# Git temporary files
+*.orig
+
+# Other OS or editor-specific files
+*.sublime-workspace
+*.sublime-project
+*.bak~

@@ -1,0 +1,104 @@
+@import url("../../global.css");
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+.contact-item > h1 {
+  font-family: var(--national-condensed-bold);
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--national-condensed-bold);
+  font-size: var(--font-size-h3);
+  padding-bottom: 0.5em;
+}
+
+.contacts-body {
+  padding: 2.5em 1em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contacts-container {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.breadcrum {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+  padding: 1em 0 2.5em;
+  font-family: var(--national-condensed);
+  letter-spacing: 0.5px;
+}
+
+.contact-item > ul > li {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.contact-item > ul > li:nth-child(even) {
+  padding-top: 0.25em;
+}
+
+.contact-item > ul > li:first-child > a {
+  text-decoration: underline;
+}
+
+.contact-item > ul > li > a {
+  font-family: var(--national-font);
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  letter-spacing: 0.75px;
+}
+
+.contact-item > ul > li > a:hover {
+  color: var(--primary-color);
+}
+
+.contact-item > ul > li > a:visited {
+  color: var(--secondary-color);
+}
+
+.contact-icon {
+  background-color: var(--primary-color);
+  width: 50px;
+  padding: 0.75em 0;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon > i {
+  color: var(--white-color);
+}
+
+@media (min-width: 768px) {
+  .contacts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .contact-item > h1 {
+    font-size: var(--font-size-h1);
+    text-align: left;
+  }
+}

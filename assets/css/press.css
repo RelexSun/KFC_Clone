@@ -1,0 +1,144 @@
+@import url("../../global.css");
+
+body {
+  background-color: var(--bg-subpage);
+  width: 100vw;
+  height: auto;
+}
+
+.press-container {
+  color: var(--secondary-color);
+  padding: 0 1em;
+  max-width: 1400px;
+  margin: auto;
+  letter-spacing: 0.5px;
+}
+
+.press-header h1 {
+  font-family: var(--national-condensed-bold);
+  text-align: center;
+  font-size: var(--font-size-h1);
+  margin-top: 0.5em;
+}
+
+h2 {
+  font-family: var(--national-condensed-bold);
+  font-size: var(--font-size-h4);
+}
+
+h3 {
+  margin: 0.5em 0;
+  font-size: var(--font-size-h4);
+  font-family: var(--national-condensed-bold);
+}
+
+.arrordion-2024 > ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.arrordion-2024 > ul > a > li {
+  list-style: inside;
+}
+
+.arrordion-2024 li {
+  font-family: var(--national-condensed-bold);
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+li::marker {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--secondary-color);
+  transition: 0.2s ease-in-out;
+}
+
+.arrordion-2024 a:hover {
+  color: var(--primary-color);
+}
+
+.press-section {
+  padding-top: 2.5em;
+  margin-bottom: 2em;
+}
+
+.press-archives {
+  min-width: 250px;
+  margin-top: 3em;
+}
+
+.press-card-container > a:hover > .press-card-item > .press-card-details > h3 {
+  color: var(--primary-color);
+}
+
+.press-card-container {
+  display: grid;
+  gap: 2em;
+  max-width: 1200px;
+}
+
+.press-card-item {
+  background-color: var(--white-color);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 16 / 9;
+}
+
+.press-card-details {
+  font-family: var(--national-condensed-bold);
+  padding: 1.5em;
+}
+
+.press-kind {
+  font-size: var(--font-size-body);
+}
+
+.press-date {
+  font-size: 1.25rem;
+  font-family: var(--national-font);
+}
+
+.press-kind,
+.press-date {
+  color: var(--secondary-color);
+}
+
+/* Medium Devices (≥ 768px) */
+@media (min-width: 768px) {
+  .press-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h2 {
+    font-size: var(--font-size-h2);
+  }
+}
+
+/* Large Devices (≥ 1024px) */
+@media (min-width: 1024px) {
+  .press-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .press-section {
+    display: flex;
+    align-items: start;
+    gap: 3em;
+  }
+
+  .press-archives {
+    margin-top: 0;
+  }
+}
+
+/* Ultra-Wide Screens (≥ 1440px) */
+@media (min-width: 1440px) {
+}
