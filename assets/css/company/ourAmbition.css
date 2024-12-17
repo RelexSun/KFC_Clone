@@ -1,0 +1,125 @@
+@import url(company.css);
+.text-section1 {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+.h1{
+    font-size: 1.8rem; 
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.li-active {
+    color: var(--primary-color);
+}
+
+.list > li {
+    position: relative;
+}
+
+.list > li::after {
+    content: ">";
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.list > li:last-child::after {
+    content: "";
+}
+
+.p-header {
+    text-align: start;
+    font-size: medium;
+    font-weight: 100;
+    padding-bottom: 0px;
+    font-family: "National 2 Condensed";
+}
+.p-sentence {
+    text-align: start;
+    font-size:large;
+    font-weight: 100;
+    color: rgb(42, 41, 41);
+}
+.img-section{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* Media Query for Medium Devices (≥ 768px) */
+@media (min-width: 768px) {
+    .h1{
+        font-size: 2.5rem;
+    }
+    .p-sentence{
+        font-size:x-large;
+    }
+
+    /* Parent Container */
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Individual Section */
+    .each-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+        gap: 20px; /* Space between grid items */
+        align-items: center; 
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* Reverse Section for Image on left */
+    .each-info:nth-child(even) { 
+        grid-template-areas: "text image"; 
+    }
+
+    .each-info:nth-child(odd) {
+        grid-template-areas: "text image";
+    }
+
+    /* Text Section */
+    .text-section {
+        grid-area: text; /* Assign text to grid area */
+    }
+
+    /* Image Section */
+    .img-section {
+        grid-area: image; /* Assign image to grid area */
+        width: 100%;
+        height: 300px; 
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+/* Large Devices (≥ 1024px) */
+@media (min-width: 1024px) {
+    .text-section1{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* Ultra-Wide Screens (≥ 1440px) */
+@media (min-width: 1440px) {
+    .text-section1{
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+    .each-info{
+        padding-top: 5%;
+    }
+}
