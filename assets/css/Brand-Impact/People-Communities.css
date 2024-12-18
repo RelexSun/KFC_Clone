@@ -1,215 +1,213 @@
 @import url("../../../global.css");
 
 .image-overlay {
-    max-width: 100vw;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
+  max-width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
 }
 
 .image-overlay > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .overlay {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-family: var(--national-condensed-bold);
-    font-size: 2.25rem;
-    font-weight: 400;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: var(--national-condensed-bold);
+  font-size: 2.25rem;
+  font-weight: 400;
 }
 
-.section-1{
-    padding: 2rem 1rem;
-    font-family: var(--national-font);
-    font-size: 1.3em;
-    letter-spacing: 0.5px;
-    line-height: 120%;
-    font-weight: 500;
+.section-1 {
+  padding: 2rem 1rem;
+  font-family: var(--national-font);
+  font-size: 1.3em;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  font-weight: 500;
 }
 
 .list {
-    display: flex;
+  display: flex;
 }
 
 .list > li {
-    position: relative;
-    font-size: 1.2rem;
+  position: relative;
+  font-size: 1.2rem;
 }
 
 .list > li::after {
-    content: ">";
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
+  content: ">";
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .list > li:last-child::after {
-    content: "";
+  content: "";
 }
 
 .section-1 > h1 {
-    font-family: var(--national-condensed-bold);
-    font-size: 2.7rem;
-    font-weight: 400;
+  font-family: var(--national-condensed-bold);
+  font-size: 2.7rem;
+  font-weight: 400;
 }
 
 .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-container > img {
-    flex-grow: 1;
-    max-width: 33.33%;
-    height: auto;
+  flex-grow: 1;
+  max-width: 33.33%;
+  height: auto;
 }
 
-.section{
-    padding: 0 1rem;
-    font-family: var(--national-font);
-    font-size: 1.3em;
-    letter-spacing: 0.5px;
-    line-height: 120%;
-    margin-bottom: 2.5rem;
-    font-weight: 500;
+.section {
+  padding: 0 1rem;
+  font-family: var(--national-font);
+  font-size: 1.3em;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
 }
 
 .image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
 }
 
 .section > h3 {
-    margin-bottom: 1.5rem;
-    font-family: var(--national-condensed);
-    font-size: 1.8rem;
-    font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: var(--national-condensed);
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .image > img {
-    max-width: 100%;
-    border: 1px solid black;
-    border-radius: 25px;
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 25px;
 }
 
 .image > p {
-    margin-top: 0.7rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .section > h1 {
-    font-family: var(--national-condensed-bold);
-    font-size: 2.7rem;
-    font-weight: 400;
+  font-family: var(--national-condensed-bold);
+  font-size: 2.7rem;
+  font-weight: 400;
 }
 
 .section > .image-container > img {
-    max-width: 80%;
-    margin: 0 auto;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .li-active {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .list > li > a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
-a:visited {
-    color: black;
+.list > a:visited {
+  color: black;
 }
 
 .image-container > .cursor {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.section span.bold-word{
-    font-family: var(--national-condensed-bold);
-    font-size: 1.3rem;
-    font-weight: 600;
+.section span.bold-word {
+  font-family: var(--national-condensed-bold);
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .las-section > .paragraph-container {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .las-section > .image-container {
-    margin: 3.125rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  margin: 3.125rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Medium Devices (≥ 768px) */
 @media (min-width: 768px) {
-    .overlay {
-        font-size: 4.5rem;
-    }
+  .overlay {
+    font-size: 4.5rem;
+  }
 
-    .image-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Large Devices (≥ 1024px) */
 @media (min-width: 1024px) {
-    .section-1 {
-        font-size: 1.5rem;
-    }
+  .section-1 {
+    font-size: 1.5rem;
+  }
 
-    .section {
-        font-size: 1.5rem;
-    }
+  .section {
+    font-size: 1.5rem;
+  }
 }
 
 /* Extra Large Devices (≥ 1200px) */
 @media (min-width: 1200px) {
+  .section {
+    margin: 0 3.5rem;
+  }
 
-    .section {
-        margin: 0 3.5rem;
-    }
-
-    .las-section {
-        margin-top: 5rem;
-    }
+  .las-section {
+    margin-top: 5rem;
+  }
 }
 
 /* Ultra-Wide Screens (≥ 1440px) */
 @media (min-width: 1440px) {
-    .section-1 {
-        margin: 0 9rem;
-    }
+  .section-1 {
+    margin: 0 9rem;
+  }
 
-    .section {
-        margin: 0 9rem;
-    }
+  .section {
+    margin: 0 9rem;
+  }
 
-    .section-3 > h3 {
-        margin-top: 4rem;
-    }
+  .section-3 > h3 {
+    margin-top: 4rem;
+  }
 
-    .las-section > h1 {
-        margin-top: 6rem;
-        margin-bottom: 1rem;
-    }
-
+  .las-section > h1 {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
 }
