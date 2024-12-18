@@ -40,14 +40,17 @@
             <a href="careerhome.html">
               <li class="slider-li">HOME</li>
             </a>
+            <hr>
             <a href="whoweare.html">
               <li class="slider-li">WHO WE ARE</li>
             </a>
+            <hr>
             <a href="working.html" target="_blank">
               <li class="slider-li">WORKING HERE</li>
             </a>
+            <hr>
             <a href="job.html">
-              <li class="slider-li">JOB SEARCH</li>
+              <li class="slider-li button-job">JOB SEARCH</li>
             </a>
           </ul>
         </div>
@@ -73,24 +76,86 @@
         <h1 class="career-h1">Careers</h1>
       </div>
       <ul class="career-nav-items">
-        <li><a href="./careerhome.html">HOME</a></li>
-        <li><a href="./whoweare.html">WHO WE ARE</a></li>
-        <li><a href="./working.html">WORKING HERE</a></li>
-        <li><a href="./job.html">JOB SEARCH</a></li>
+        <li><a href="./careerhome.html" class="slide-link ">HOME</a></li>
+        <li><a href="./whoweare.html" class="slide-link">WHO WE ARE</a></li>
+        <li><a href="./working.html" class="slide-link">WORKING HERE</a></li>
+        <li><a href="./job.html" class="slide-link active">JOB SEARCH</a></li>
       </ul>
     </div>
   </nav>
 
+  <main class="job-container">
+    <div class="job-hero">
+      <div class="job-hero-text">
+        <h1 class="outline-text">JOB SEARCH</h1>
+        <h1 class="fill-text">YOU READY? BRING IT.</h1>
+      </div>
+      <div class="job-input-container">
+        <div>
+          <label for=""><span>JOB ROLE</span> </label>
+          <input type="text" placeholder="Keywords">
+        </div>
+        <div>
+          <label for=""><span>TEAM</span> </label>
+          <input type="text" placeholder="Keywords">
+        </div>
+      </div>
+    </div>
+    <section class="job-found"></section>
+  </main>
 
+  <main class="job-found">
+    <span>4 JOBS FOUND</span>
+    <hr>
+    <div class="job">
+      <div class="job-text">
+        <p>Finance</p>
+        <h1>Senior Financial Analyst</h1>
+      </div>
+      <button>VIEW JOB</button>
+    </div>
+    <hr>
+    <div class="job">
+      <div class="job-text">
+        <p>Finance</p>
+        <h1>Senior Analyst</h1>
+      </div>
+      <button>VIEW JOB</button>
+    </div>
+    <hr>
+    <div class="job">
+      <div class="job-text">
+        <p>Development</p>
+        <h1>Manager, Restaurant Design & Customer Experience</h1>
+      </div>
+      <button>VIEW JOB</button>
+    </div>
+    <hr>
+    <div class="job">
+      <div class="job-text">
+        <p>Human Resources</p>
+        <h1>Manager, Team Member Experience</h1>
+      </div>
+      <button>VIEW JOB</button>
+    </div>
+  </main>
 
   <footer class="career-footer-container">
     <div class="career-footer">
       <div class="career-footer-content">
         <ul class="career-footer-items">
-          <li>HOME</li>
-          <li>WHO WE ARE</li>
-          <li>WORKING HERE</li>
-          <li>JOB SEARCH</li>
+          <a href="careerhome.html">
+            <li>HOME</li>
+          </a>
+          <a href="whoweare.html">
+            <li>WHO WE ARE</li>
+          </a>
+          <a href="working.html">
+            <li>WORKING HERE</li>
+          </a>
+          <a href="job.html">
+            <li>JOB SEARCH</li>
+          </a>
         </ul>
 
         <div class="career-footer-logo">

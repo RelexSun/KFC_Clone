@@ -8,6 +8,7 @@
   <script src="https://kit.fontawesome.com/40cad8fac3.js" crossorigin="anonymous"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="../css/brand.css">
+  <script src="../../global.js" defer></script>
 </head>
 
 <body>
@@ -15,16 +16,43 @@
   <nav class="nav-sm">
     <div class="nav-container">
       <a href="../../index.html">
-
-
         <svg fill="#c41230" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M21.893 8.23c-4.187.001-5.249 2.365-5.42 3.97-.194 1.802 1.053 3.57 4.127 3.57 1.294 0 2.14-.225 2.44-.32a.215.215 0 0 0 .147-.166l.173-.91a.184.184 0 0 0-.236-.21c-.336.106-.93.252-1.685.252-1.469 0-2.53-.882-2.395-2.4.13-1.47 1.121-2.59 2.485-2.59.82 0 1.183.43 1.156 1.003v.033a.184.184 0 0 0 .182.193h.557c.086 0 .16-.06.18-.143l.39-1.76a.215.215 0 0 0-.15-.255 7.21 7.21 0 0 0-1.95-.266zm-20.157.116a.2.2 0 0 0-.195.156l-.108.484a.198.198 0 0 0 .13.23l.033.01c.208.082.45.266.348.748l-.792 3.62c-.207.987-.542 1.19-.86 1.226h-.01a.2.2 0 0 0-.176.157l-.102.464a.192.192 0 0 0 .187.233h3.487c.085 0 .159-.06.177-.142l.12-.543a.184.184 0 0 0-.112-.21l-.022-.01c-.177-.07-.418-.224-.356-.51l.405-1.85c1.389 2.535 1.848 3.266 3.514 3.265H8.91a.181.181 0 0 0 .177-.142l.105-.47a.195.195 0 0 0-.186-.238c-.376-.006-.56-.093-.935-.575l-1.932-2.614 2.51-2.088c.337-.264.748-.338.976-.368l.022-.002a.185.185 0 0 0 .163-.144l.103-.464a.184.184 0 0 0-.18-.223h-3.02a.199.199 0 0 0-.193.155l-.102.46a.2.2 0 0 0 .138.235c.178.069.217.24.063.366L4.046 11.7l.44-2.014a.683.683 0 0 1 .477-.487l.025-.008a.199.199 0 0 0 .135-.147l.106-.477a.181.181 0 0 0-.177-.22zm8.88 0a.2.2 0 0 0-.194.156l-.107.483a.19.19 0 0 0 .122.221l.02.008c.204.077.487.274.364.758l-1.21 5.48a.182.182 0 0 0 .178.222h2.777c.086 0 .16-.06.179-.143l.12-.547a.174.174 0 0 0-.098-.196 1.558 1.558 0 0 1-.027-.013c-.176-.086-.438-.285-.35-.67.009-.05.27-1.24.27-1.24h2.362c.086 0 .16-.06.18-.143l.221-1a.183.183 0 0 0-.18-.224h-2.28l.427-1.94 1.592-.003c.515 0 .672.27.642.728l-.002.024a.184.184 0 0 0 .183.205h.587c.086 0 .16-.06.178-.144l.4-1.8a.184.184 0 0 0-.18-.222z" />
         </svg>
       </a>
-      <i class='bx bx-menu bx-sm'></i>
+      <div>
+        <input type="checkbox" id="nav-input" class="nav-input">
+        <label for="nav-input" class="toggle">
+          <span class="top-line common"></span>
+          <span class="mid-line common"></span>
+          <span class="bot-line common"></span>
+        </label>
+        <div class="slide">
+          <ul class="slider-ul">
+            <a href="./company/company.html">
+              <li class="slider-li">COMPANY</li>
+            </a>
+            <a href="brand.html">
+              <li class="slider-li">BRAND IMPACT</li>
+            </a>
+            <a href="./careers/careerhome.html" target="_blank">
+              <li class="slider-li">CAREERS</li>
+            </a>
+            <a href="newsroom.html">
+              <li class="slider-li">NEWSROOM</li>
+            </a>
+            <a href="#">
+              <li class="slider-li">SEARCH</li>
+            </a>
+          </ul>
+        </div>
+      </div>
     </div>
+
   </nav>
+
+
 
   <nav class="nav-lg">
     <div class="nav-container">
@@ -35,36 +63,40 @@
         </svg>
       </a>
       <div class="nav-items">
-        <ul>
+        <ul class="nav-items-ul">
           <li>
-            <a href="../pages/company.html">
+            <a href="./company/company.html">
               COMPANY
             </a>
           </li>
 
           <li>
-            <a href="../pages/brand.html">
+            <a href="brand.html" class="active">
               BRAND IMPACT
             </a>
           </li>
           <li>
-            <a href="../pages/careers/careerhome.html" target="_blank">
+            <a href="./careers/careerhome.html" target="_blank">
               CAREERS
             </a>
           </li>
           <li>
-            <a href="../pages/newsroom.html">
+            <a href="newsroom.html">
               NEWSROOM
             </a>
           </li>
         </ul>
+        <div class="search">
+          <input type="text">
+          <i class='bx bx-search bx-md'></i>
+        </div>
       </div>
-      <div class="search"></div>
+
     </div>
   </nav>
 
   <!-- your code -->
-   <main>
+  <main>
     <div class="header-sm">
       <div class="header-strip">
         <div class="header-strip-child"></div>
@@ -72,8 +104,11 @@
         <div class="header-strip-child"></div>
       </div>
       <h1 class="menu-header">BRAND IMPACT</h1>
-      <p>Finger lickin’ good, always. It’s what we do! But it’s not all that we do. We’re more than the iconic taste that feeds your crave; we’re also neighbors, mentors, volunteers and so much more.</p>
-      <p>“Done the Right Way” is our commitment to people and communities, our chicken and nutrition, and our suppliers and climate. It’s the guiding compass for how we buy, how we build, and how we operate – because “how” matters to KFC and the world around us.</p>
+      <p>Finger lickin’ good, always. It’s what we do! But it’s not all that we do. We’re more than the iconic taste
+        that feeds your crave; we’re also neighbors, mentors, volunteers and so much more.</p>
+      <p>“Done the Right Way” is our commitment to people and communities, our chicken and nutrition, and our suppliers
+        and climate. It’s the guiding compass for how we buy, how we build, and how we operate – because “how” matters
+        to KFC and the world around us.</p>
     </div>
     <div class="picture-container">
       <div class="picture-item">
@@ -100,17 +135,21 @@
     </div>
     <div class="main-footer">
       <h1 class="menu-header">Our Recipe for Good Growth</h1>
-      <p>Yum! Brands’ Good Growth strategy is grounded in the idea that our business will only endure if our brands are inclusive, sustainable, and reflective of evolving employee, franchisee and other stakeholder needs. As we grow, we’re identifying synergies with our Good priorities of our People, Food and Planet.</p>
+      <p>Yum! Brands’ Good Growth strategy is grounded in the idea that our business will only endure if our brands are
+        inclusive, sustainable, and reflective of evolving employee, franchisee and other stakeholder needs. As we grow,
+        we’re identifying synergies with our Good priorities of our People, Food and Planet.</p>
       <img src="../../public/brand/image_4.jpg" alt="Image">
-      <a href="https://www.yum.com/wps/wcm/connect/yumbrands/e0b6e0c9-8762-4d1f-95ee-64f6ea0569a5/R4GG+2023+FINAL.pdf?MOD=AJPERES&CVID=p9ERNrJ">View the Yum! Brands 2023 Global Citizenship & Sustainability Report</a>
+      <a
+        href="https://www.yum.com/wps/wcm/connect/yumbrands/e0b6e0c9-8762-4d1f-95ee-64f6ea0569a5/R4GG+2023+FINAL.pdf?MOD=AJPERES&CVID=p9ERNrJ">View
+        the Yum! Brands 2023 Global Citizenship & Sustainability Report</a>
     </div>
-    
+
     <button id="scrollButton">
       <i class="fa-solid fa-angles-up"></i>
     </button>
     <script src="../script/scrollButton.js"></script>
 
-   </main>
+  </main>
 
 
   <!-- footer -->
@@ -123,24 +162,74 @@
     <div class="footer-info">
       <hr>
       <div class="footer-info-content">
-        <h1>COMPANY</h1>
+        <h1 class="h1-title">COMPANY</h1>
         <i class='bx bx-chevron-down bx-lg'></i>
       </div>
+      <ul class="footer-nav-sm">
+        <a href="./company/ourAmbition.html">
+          <li>Our Ambitions</li>
+        </a>
+        <a href="">
+          <li>Our Leadership</li>
+        </a>
+        <a href="./company/ourhistory.html">
+          <li>Our History</li>
+        </a>
+        <a href="./company/company.html">
+          <li>Where We Dish It Up</li>
+        </a>
+      </ul>
       <hr>
       <div class="footer-info-content">
-        <h1>BRAND IMPACT</h1>
+        <h1 class="h1-title">BRAND IMPACT</h1>
         <i class='bx bx-chevron-down bx-lg'></i>
       </div>
+      <ul class="footer-nav-sm">
+        <a href="">
+          <li>People & Communities</li>
+        </a>
+        <a href="">
+          <li>Chicken & Nutrition</li>
+        </a>
+        <a href="">
+          <li>Suppliers & Climate</li>
+        </a>
+      </ul>
       <hr>
       <div class="footer-info-content">
-        <h1>CAREERS</h1>
+        <h1 class="h1-title">CAREERS</h1>
         <i class='bx bx-chevron-down bx-lg'></i>
       </div>
+      <ul class="footer-nav-sm">
+        <a href="">
+          <li>Who We Are</li>
+        </a>
+        <a href="">
+          <li>Working Here</li>
+        </a>
+        <a href="">
+          <li>Job Search</li>
+        </a>
+      </ul>
       <hr>
       <div class="footer-info-content">
-        <h1>NEWSROOM</h1>
+        <h1 class="h1-title">NEWSROOM</h1>
         <i class='bx bx-chevron-down bx-lg'></i>
       </div>
+      <ul class="footer-nav-sm">
+        <a href="press.html">
+          <li>Press Releases</li>
+        </a>
+        <a href="blog.html">
+          <li>Blog</li>
+        </a>
+        <a href="contact.html">
+          <li>Media Contacts</li>
+        </a>
+        <a href="brandassets.html">
+          <li>Media Assets</li>
+        </a>
+      </ul>
       <hr>
     </div>
     <div class="footer-icons">
@@ -166,40 +255,68 @@
     <div class="footer-info">
       <hr>
       <div class="footer-info-content">
-        <h1>COMPANY</h1>
-        <ul>
-          <li>Our Ambitions</li>
-          <li>Our Leadership</li>
-          <li>Our History</li>
-          <li>Where We Dish It Up</li>
+        <h1 class="h1-title">COMPANY</h1>
+        <ul class="footer-nav">
+          <a href="">
+            <li>Our Ambitions</li>
+          </a>
+          <a href="">
+            <li>Our Leadership</li>
+          </a>
+          <a href="">
+            <li>Our History</li>
+          </a>
+          <a href="">
+            <li>Where We Dish It Up</li>
+          </a>
         </ul>
       </div>
       <hr>
       <div class="footer-info-content">
-        <h1>BRAND IMPACT</h1>
-        <ul>
-          <li><a href="../pages/Brand-Impact/People-Communities.html">People & Communities</a></li>
-          <li><a href="../pages/Brand-Impact/Chicken-Nutrition.html">Chicken & Nutrition</a></li>
-          <li><a href="../pages/Brand-Impact/Suppliers-Climate.html">Suppliers & Climate</a></li>
+        <h1 class="h1-title">BRAND IMPACT</h1>
+        <ul class="footer-nav">
+          <a href="">
+            <li>People & Communities</li>
+          </a>
+          <a href="">
+            <li>Chicken & Nutrition</li>
+          </a>
+          <a href="">
+            <li>Suppliers & Climate</li>
+          </a>
         </ul>
       </div>
       <hr>
       <div class="footer-info-content">
-        <h1>CAREERS</h1>
-        <ul>
-          <li>Who We Are</li>
-          <li>Working Here</li>
-          <li>Job Search</li>
+        <h1 class="h1-title">CAREERS</h1>
+        <ul class="footer-nav">
+          <a href="">
+            <li>Who We Are</li>
+          </a>
+          <a href="">
+            <li>Working Here</li>
+          </a>
+          <a href="">
+            <li>Job Search</li>
+          </a>
         </ul>
       </div>
       <hr>
       <div class="footer-info-content">
-        <h1>NEWSROOM</h1>
-        <ul>
-          <li>Press Releases</li>
-          <li>Blog</li>
-          <li>Media Contacts</li>
-          <li>Media Assets</li>
+        <h1 class="h1-title">NEWSROOM</h1>
+        <ul class="footer-nav">
+          <a href="press.html">
+            <li>Press Releases</li>
+          </a>
+          <a href="blog.html">
+            <li>Blog</li>
+          </a>
+          <a href="contact.html">
+            <li>Media Contacts</li>
+          </a>
+          <a href="brandassets.html">
+            <li>Media Assets</li>
+          </a>
         </ul>
       </div>
       <hr>

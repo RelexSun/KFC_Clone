@@ -1,1 +1,333 @@
 @import url("./careerhome.css");
+.first-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.first-container-strip{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 4rem;
+    width: 102px;
+    margin-bottom: 2.5rem;
+}
+.first-container-strip-red{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 6rem;
+    width: 102px;
+    margin-bottom: 2.5rem;
+    
+    
+}
+.first-container-strip-red1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 6rem;
+    width: 102px;
+    
+    
+}
+.first-container-strip-child{
+    background-color: inherit;
+    width: 20%;
+    height: 100%;
+    background-color: var(--white-color);
+    
+}
+.first-container-strip-child-red{
+    background-color: inherit;
+    width: 20%;
+    height: 100%;
+    background-color: var(--primary-color);
+    
+}
+.red-strip{
+    padding-left: 1.5rem;
+}
+.first-text{
+    opacity: 1;
+    box-sizing: border-box;
+    flex: 1 0 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+}
+.first-container-pic{
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    opacity: 1;
+}
+.second-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.second-container-pic{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-bottom: 3.5rem;
+}
+.second-container-pic > img{
+    width: 100%;
+    height: 100%;
+}
+.black-title{
+    text-transform: uppercase;
+    font-size: var(--font-size-h1 );
+    font-weight: var(--font-weight-700);
+    margin-bottom: 1.25rem;
+
+}
+.white-text{
+    text-transform: uppercase;
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-700);
+    margin-bottom: 1.25rem;
+    
+}
+.outline-title{
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1.5px;
+    color: transparent;
+    -webkit-text-stroke-color: var(--secondary-color);
+    
+}
+.outline-title-white{
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1.5px;
+    color: transparent;
+    -webkit-text-stroke-color: white ;
+}
+h3{
+    text-transform: uppercase;
+}
+h4{
+    text-transform: uppercase;
+}
+.third-container-h3{
+    margin-bottom: 1.25rem;
+}
+.third-container-text{
+    padding-left: 1.5rem;
+}
+.third-container-text1{
+    border-top: 3px solid var(--primary-color);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.third-container-text2{
+    border-top: 3px solid var(--primary-color);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.fourth-container-pic{
+    border: 0.25rem solid var(--primary-color);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.5rem;
+}
+.fourth-container-text{
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    max-width: 100%;
+
+}
+.fourth-container{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.sub-container{
+    margin-bottom: 1rem;
+}
+.sub-container-main{
+    padding-bottom: 4rem;
+}
+.fifth-container-h4{
+    margin-bottom: 1.5rem;
+    font-weight: var(--font-weight-700);
+}
+.fifth-container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.sixth-container{
+    background-color: var(--primary-color);
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.icon{
+    margin-bottom: 1.25rem;
+}
+.sixth-container-text{
+    padding-top: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+.white-border-top{
+    border-top: 3px solid white;
+}
+.white-border-top>p{
+    margin-bottom: 1.25rem;
+}
+.seventh-container{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.job-button{
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: var(--font-weight-700);
+    height: 3.125rem;
+    justify-content: center;
+    margin-top: 1.25rem;
+    min-width: 14rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    vertical-align: top;
+    text-decoration: none;
+}
+.seventh-container-pic{
+    display: block;
+    object-fit: cover;
+    border: 0.25rem solid var(--primary-color);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.seventh-container-text{
+    margin-bottom: 2rem;
+}
+@media (min-width: 1024px) {
+    .first-container{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-bottom: 7rem;
+    }
+    .first-container-pic{
+        flex-basis: 50%;
+        max-width: 50%;
+        margin-right: 1.5rem;
+    }
+    .first-text{
+        flex-basis: 43.75%;
+        max-width: 43.75%;
+        gap: 2.5rem;
+    }
+    .first-container-text{
+        margin-top: 5rem;
+    }
+    .second-container-text{
+        flex-basis: 43.75%;
+        max-width: 43.75%;
+    }
+    .second-container-pic{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .red-strip-child-red{
+        height: 7rem;
+        
+    }
+    .first-container-strip-red{
+        width: 210px;
+    }
+    .first-container-strip-red1{
+        width: 210px;
+    }
+    .first-container-strip-child{
+        height: 7rem;
+    }
+    .first-container-strip{
+        width: 210px;
+    }
+    .fourth-container-pic{
+        flex-basis: 56.25%;
+        max-width: 56.25%;
+    }
+    .fourth-container-text{
+        flex-basis: 37.5%;
+        max-width: 37.5%;
+    }
+    
+    .seventh-container{
+        display: flex;
+    }
+    .seventh-container-text{
+        flex-basis: 37.5%;
+        max-width: 37.5%;
+    }
+    .seventh-container-pic{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .second-container{
+        justify-content: space-between;
+    }
+    .fourth-container{
+        justify-content: space-between;
+    }
+    .red-strip{
+        width: 210px;
+    }
+    .sub-container{
+        margin-bottom: 3rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .seventh-container{
+        justify-content: space-between;
+    }
+    .fifth-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .fifth-container-title{
+        flex-basis: 43.75%;
+        max-width: 43.75%;
+    }
+    .sub-container-main{
+        flex-basis: 56.25%;
+        max-width: 56.25%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub-container{
+        flex-basis: 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+

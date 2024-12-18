@@ -1,1 +1,104 @@
 @import url("./careerhome.css");
+
+.job-container {
+  background-color: var(--primary-color);
+}
+
+.job-hero,
+.job-found {
+  max-width: 1400px;
+  margin: auto;
+  padding: 2em;
+  font-family: var(--national-condensed-bold);
+}
+
+input[type="text"] {
+  font-size: 100%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+  padding: 0.5em;
+}
+
+.outline-text {
+  -webkit-text-stroke: 2px white;
+  color: var(--primary-color);
+  font-size: 3.5rem;
+  line-height: 50%;
+}
+
+.fill-text {
+  color: var(--white-color);
+  font-size: 4rem;
+}
+
+.job-input-container {
+  background-color: var(--white-color);
+  font-size: 1.35rem;
+  padding: 1.5em 1em;
+  margin-top: 2em;
+}
+
+.job-input-container > div {
+  flex-grow: 1;
+}
+
+.job > button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75em 2em;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  font-family: var(--national-condensed-bold);
+  letter-spacing: 1px;
+}
+
+.job-found > hr {
+  margin: 1em 0;
+}
+
+.job-text {
+  margin: 1em 0;
+  margin-bottom: 3em;
+}
+
+.job-text > h1 {
+  letter-spacing: 1px;
+}
+
+.job-text > p {
+  font-family: var(--national-font);
+  font-size: 1.5rem;
+  line-height: 200%;
+  word-spacing: -7px;
+}
+
+/* Large Devices (≥ 1024px) */
+@media (min-width: 1024px) {
+  .outline-text {
+    font-size: 4.5rem;
+  }
+
+  .fill-text {
+    font-size: 5.5rem;
+  }
+
+  .job-input-container {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1em;
+  }
+
+  .job {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .job > button {
+    font-size: 1.5rem;
+  }
+}

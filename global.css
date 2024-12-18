@@ -204,7 +204,7 @@ nav {
   transition: 0.2s ease;
 }
 
-.active {
+.nav-items-ul > li > .active {
   color: var(--primary-color);
 }
 
@@ -248,6 +248,10 @@ section {
   text-align: center;
   display: grid;
   gap: 2.5rem;
+}
+
+.active {
+  color: var(--primary-color);
 }
 
 .hero-stats-item {
